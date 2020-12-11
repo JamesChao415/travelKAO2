@@ -1,0 +1,383 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul ,a{
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*css reset*/
+
+*{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	font-family: "微軟正黑體";
+}
+.clearfix::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.clearfix{
+	clear: both;
+}
+/* global */
+.fixed-width{
+	width: 1050px;
+	margin: 0 auto;
+}
+/*social*/
+.social{
+	margin: 20px 0 18px 0;
+	padding: 5px 0px;
+	padding-right: 12px;
+	background-color: #eee;
+}
+.social ul{
+	float: right;
+}
+.social li{
+	float: left;
+}
+.f,.t{
+	padding: 0 8px;
+	font-size: 15px;
+}
+.f{
+	text-decoration: none;
+	color: #653eca;
+	border-right: #555 1px solid;
+}
+.t{
+	text-decoration: none;
+	color: #319ed7;
+}
+
+/* topmenu */
+.topmenu h1{
+	float: left;
+	font-weight: 700;
+}
+.topmenu ol{
+	 float: right;
+}
+.topmenu ol li{
+	float: left;
+	font-size: 15px;
+}
+.topmenu li a{
+	text-decoration: none;
+	color: #0c9;
+	display: block;
+	padding: 5px 10px 17px 10px;
+}
+.topmenu li a:hover{
+	border-bottom: 4px solid #0c9 ;
+}
+.topmenu h1 a{
+	display: block;
+	background-image: url();
+	background-repeat:no-repeat;
+	padding-top: 5px;
+	padding-left: 16px;
+	height: 43px;
+	width: 200px;
+	white-space:nowrap;
+	margin-top: -15px;
+    font-size: 28px;
+    font-family: monospace;
+    text-decoration: none;
+    
+}
+/* features */
+.features{
+	background-image: url(http://pic.pimg.tw/annwei/1370098313-1462753925_l.jpg);
+	background-size: cover;
+	background-repeat:no-repeat;
+	padding: 80px 0;
+	height: 350px;
+    font-size: 30px;
+    color: rgb(221, 236, 155);
+}
+.features h2{
+	font-size: 36px;
+	color: #fff;
+	font-weight: 400;
+	line-height: 44px;
+	padding: 0 20px;
+}
+.titlenews{
+	color: orange;
+	font-size: 34px;
+	font-weight: 900;
+	margin-top: 30px;
+}
+/*content*/
+.content{
+	margin-top: 45px;
+	margin-bottom: 62px;
+	text-align: center;
+}
+.new1,.new2,.new3{
+	width: 330px;
+	padding: 0;
+	float: left;
+	box-shadow: 0 3px 5px gray;
+}
+.content a{
+	text-decoration: none;
+	color: #000;
+}
+.content a:hover{
+	background-color: orange;
+	
+}
+.new1{
+	margin-left: 5px;
+	margin-right: 20px;
+}
+.new2{
+	margin-left: 0px;
+	margin-right: 20px;
+}
+.new3{
+	margin-left: 0px;
+	margin-right: 5px;
+}
+/*.html5{
+	margin-left: 20px;
+	margin-right: 14px;
+}*/
+.content img{
+	width: 330px;
+}
+.content h4{
+	background-color: #FF0080;
+	color: #fff;
+	width: 60px;
+	padding: 3px 0;
+	margin-top: 8px;
+	margin-left: 10px;
+}
+.content h3{
+	text-align: center;
+	font-size: 18px;
+	font-weight: 400;
+	padding-top: 10px;
+	padding-bottom: 5px;
+	letter-spacing: 1.5px;
+	margin-bottom: 10px;
+	font-weight: 900;
+}
+.content p{
+	text-align: justify; /*左右補滿*/
+	font-size: 15px;
+	line-height: 1.5em;
+	padding-left: 10px;
+	padding-right: 10px;
+	letter-spacing: 1.5px;
+	line-height: 25px;
+}
+
+/*footer*/
+footer{
+	width: 1040px;
+	height: 65px;
+	margin: 20px auto;
+	background-color: #8600FF;
+}
+.footerlogo{
+	float: left;
+	padding: 17px 0 0 20px;
+	color: white;
+}
+.contact{
+	float: right;
+}
+.contact{
+	margin-top: 5px;
+	padding-bottom: 5px;
+}
+.contact p{
+	line-height: 24px;
+	letter-spacing: 1.7px;
+	margin-right: 10px;
+}
+.white{
+	color: #ffffff;
+}
+
+
+
+
+
+/* traffic.html*/
+.traffic{
+	width: 62%;
+	float: left;
+}
+.traffic h2{
+	margin-top: 35px;
+	color: #009FCC;
+	font-size: 36px;
+	font-weight: 900;
+	margin-left: 10px;
+}
+.traffic h3{
+	width: 300px;
+	color: white;
+	margin-top: 25px;
+	font-size: 20px;
+	background-color: #009FCC;
+	padding-top: 10px;
+	padding-left: 10px;
+	padding-bottom: 10px;
+	margin-left: 10px;
+}
+.bold{
+	font-weight: 600;
+	background-color: #DDDDDD;
+	white-space: nowrap;
+}
+.airplane{
+	margin-top: 30px;
+	margin-left: 15px;
+}
+table td{
+	font-size: 20px;
+	padding: 12px 20px;
+	border-top: 1px solid gray;
+	border-bottom: 1px solid gray;
+	white-space: nowrap;
+}
+table tr:hover{
+	background-color: #eee;
+}
+.map{
+	width: 30%;
+	float: left;
+	margin-left: 50px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+
+/* travel*/
+.aside{
+	width: 20%;
+	margin-top: 20px;
+	float: left;
+}
+.aside ul li a{
+	padding: 15px 15px 15px 5px;
+	border-bottom: 2px solid #DFDFDF;	
+	color: black;
+	display: block;
+	text-decoration: none;
+	font-family: DFKai-sb;
+	font-size: 20px;
+}
+.aside ul li a:hover{
+	color: white;
+	background-color: #00cc99;
+}
+
+.bordergreen{
+	border-top: 5px solid #5CBF94;
+}
+
+.place{
+	float: left;
+	width: 80%;
+}
+.place h2{
+	margin-top: 40px;
+	margin-left: 40px;
+	color: #5CBF94;
+	font-size: 36px;
+	font-weight: 900;
+	font-family: DFKai-sb;
+}
+.place img{
+	width: 735px;
+	height: 414px;
+	padding-top: 50px;
+	padding-left: 50px;
+}
+.place p{
+	width: 88%;
+	padding-top: 30px;
+	padding-left: 50px;
+	letter-spacing: 3px;
+	line-height: 1.7;
+	text-align: justify;
+	text-justify:inter-ideograph;
+}
+.inform{
+	width: 660px;
+	margin-top: 20px;
+	margin-left: 50px;	
+	margin-bottom: 20px;
+	padding-bottom: 15px;
+	background-color: #F68B29;
+	color: white;
+	font-family: 微軟正黑體;
+}
+.inform h3{
+	padding-top: 15px;
+	padding-left: 25px;
+	font-size: 27px;
+	font-weight: 700;
+}
+.inform h4{
+	padding-top: 15px;
+	padding-left: 25px;
+	font-size: 20px;
+}
+.inform p{
+	padding-top: 2px;
+	padding-left: 25px;
+	letter-spacing: 1.2px;
+	font-size: 16px;
+}
